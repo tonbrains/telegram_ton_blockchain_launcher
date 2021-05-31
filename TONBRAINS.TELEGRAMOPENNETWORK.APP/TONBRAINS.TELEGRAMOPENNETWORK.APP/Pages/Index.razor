@@ -1,0 +1,48 @@
+﻿@page "/"
+@using TONBRAINS.TONOPS.Core.Services
+@using TONBRAINS.TELEGRAMOPENNETWORK.APP.Models
+
+<div class="row" style="margin-top:3rem;">
+    <div class="col">
+
+    </div>
+    <div class="col-6">
+
+        <div class="text-center" style="margin-bottom:2rem">
+            <h1>TON One-Click Launcher</h1>
+
+        </div>
+
+        <div class="text-center" style="margin-bottom:2rem">
+            <h4 class="text-secondary">Configure Node First <br/> (visit: https://github.com/tonbrains)</h4>
+
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-danger" @onclick="IncrementCount"> TON Rocket Launch </button>
+        </div>
+
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+
+
+
+
+@code {
+
+
+
+    private void IncrementCount()
+    {
+
+
+        new TONNodeSetupSvc().StartTonNetwork(
+            new Node() { Id = "1", Ip = "192.168.0.41", SshIp = "192.168.1.100", SshPort = 2241, UserName = "root", Password = "" },
+            new Node() { Id = "2", Ip = "192.168.0.42", SshIp = "192.168.1.100", SshPort = 2242, UserName = "root", Password = "" },
+            new Node() { Id = "3", Ip = "192.168.0.43", SshIp = "192.168.1.100", SshPort = 2243, UserName = "root", Password = "" }
+            );
+    }
+}

@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TONBRAINS.TELEGRAMOPENNETWORK.APP/TONBRAINS.TELEGRAMOPENNETWORK.APP/bin/Debug/net5.0
+/TONBRAINS.TELEGRAMOPENNETWORK.APP/.vs/TONBRAINS.TELEGRAMOPENNETWORK.APP
+/TONBRAINS.TELEGRAMOPENNETWORK.APP/TONBRAINS.TELEGRAMOPENNETWORK.APP/obj
